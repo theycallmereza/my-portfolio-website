@@ -1,3 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+.card {
+  min-height: 500px;
+  transform: scale(0.9);
+  transition: all .5s; }
+  .card:hover {
+    transform: scale(1.1);
+    -webkit-box-shadow: 0px 13px 50px -13px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: 0px 13px 50px -13px rgba(0, 0, 0, 0.47);
+    box-shadow: 0px 13px 50px -13px rgba(0, 0, 0, 0.47); }
+
+.modal-content .btn {
+  background-color: #8186d5; }
+  .modal-content .btn:hover {
+    background-color: #494ca2 !important; }
+
 .logo {
   width: 64px;
   height: 64px; }
@@ -21,12 +40,48 @@
   padding-left: 10px; }
 
 .header {
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.3)), url("../img/header.jpeg");
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("../img/header2.jpg");
   background-size: cover;
-  height: 75vh; }
+  background-attachment: fixed;
+  background-position: center;
+  height: 85vh; }
 
 .py-cus {
   padding-top: 300px; }
+
+input {
+  border-bottom: none !important;
+  border-top: none !important;
+  border-right: none !important;
+  border-left: none !important; }
+  input:focus {
+    border-bottom: 1px solid #8186d5 !important; }
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important; }
+
+.projects .nav-item {
+  border: 1px solid #494ca2;
+  border-radius: 100px;
+  margin-right: 5px; }
+
+.projects .nav .active {
+  border: 1px solid #494ca2;
+  border-radius: 100px;
+  background-color: #8186d5 !important; }
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)

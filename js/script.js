@@ -1,6 +1,6 @@
 $(window).on('resize', function () {
     if ($(window).width() < 575) {
-        $('div.align-items-center').removeClass('h-100').addClass('h-25 py-cus')
+        $('div.align-items-end').removeClass('h-100').addClass('h-25 py-cus')
     }
 });
 
@@ -8,7 +8,7 @@ $(window).ready(
     function () {
         if ($(window).width() <= 992){
             $('li.dropdown').removeClass('v-divider');
-            $('div.align-items-center').removeClass('h-100').addClass('h-25 py-cus')
+            $('div.align-items-end').removeClass('h-100').addClass('h-25 py-cus');
         }
     }
 );

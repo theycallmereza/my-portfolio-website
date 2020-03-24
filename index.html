@@ -42,10 +42,8 @@
                         <i class="fas fa-user"></i>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Register</a>
-                        <a class="dropdown-item" href="#">Login</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#registerModal" data-toggle="modal">Register</a>
+                        <a class="dropdown-item" href="#loginModal" data-toggle="modal">Login</a>
                     </div>
                 </li>
             </ul>
@@ -53,73 +51,181 @@
     </div>
 </nav>
 
-
+<!--HEADER-->
 <header class="header py-5">
     <div class="container h-100">
-        <div class="row h-100 justify-content-center align-items-center">
+        <div class="row h-100 justify-content-center align-items-end">
             <div class="col-md-3 col-sm-6">
-                <button class="btn btn-dark btn-lg btn-block animated fadeInUpBig my-3">Blog</button>
+                <button class="btn btn-dark btn-lg btn-block animated fadeInUp my-3">Blog</button>
             </div>
             <div class="col-md-3 col-sm-6">
-                <button class="btn btn-light btn-lg btn-block animated fadeInUpBig my-3">Resume</button>
+                <button class="btn btn-light btn-lg btn-block animated fadeInUp my-3">Resume</button>
             </div>
         </div>
     </div>
 </header>
 
+
+<!--PROJECTS-->
 <section class="projects py-5">
     <div class="container">
+        <h1 class="text-center py-4 text-dark text-uppercase">jobs</h1>
         <div class="row">
+            <div class="col-12">
+                <ul class="nav nav-pills justify-content-center" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                           aria-controls="home" aria-selected="true">Web</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                           aria-controls="profile" aria-selected="false">Other</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                           aria-controls="contact" aria-selected="false">Test</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+                                <div class="card">
+                                    <img src="img/header.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Website: <a href="#" class="card-link text-capitalize">
+                                            www.test.ir</a></h5>
+                                        <p class="card-text">Some Description ... </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+                            <div class="card">
+                                <img src="img/header.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Website: <a href="#" class="card-link text-capitalize">
+                                        www.test.ir</a></h5>
+                                    <p class="card-text">Some Description ... </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+                            <div class="card">
+                                <img src="img/header.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Website: <a href="#" class="card-link text-capitalize">
+                                        www.test.ir</a></h5>
+                                    <p class="card-text">Some Description ... </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--FOOTER-->
+<footer class="footer bg-dark pt-3 text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="lead text-center">Copyright &copy; 2020</p>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
+<!--MODALS-->
+<div class="modal animated tada" id="registerModal">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
 
-            <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
-                <div class="card">
-                    <img src="img/header.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Register</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Phone Number">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Confirm Password">
+                            </div>
+                            <button type="submit" class="btn text-white btn-block">Register</button>
+                        </form>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
-                <div class="card">
-                    <img src="img/header.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
-                <div class="card">
-                    <img src="img/header.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
-                <div class="card">
-                    <img src="img/header.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="text-left">Already have an account? <a class="text-decoration-none" href="#loginModal" data-toggle="modal" data-dismiss="modal">Login</a></p>
                     </div>
                 </div>
             </div>
 
         </div>
     </div>
-</section>
+</div>
+
+
+<div class="modal animated tada" id="loginModal">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Login</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Phone Number">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn text-white btn-block">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <p class="text-left">Looking to <a class="text-decoration-none" href="#registerModal" data-toggle="modal" data-dismiss="modal">create an account</a> ?</p>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/popper.js"></script>

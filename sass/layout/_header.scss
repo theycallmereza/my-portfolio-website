@@ -1,7 +1,9 @@
 .header {
-  background-image: linear-gradient(to right bottom, rgba($color-white, .8), rgba($color-black, .3)), url("../img/header.jpeg");
+  background-image: linear-gradient(to right bottom, rgba($color-black, .8), rgba($color-black, .3)), url("../img/header2.jpg");
   background-size: cover;
-  height: 75vh;
+  background-attachment: fixed;
+  background-position: center;
+  height: 85vh;
 }
 .py-cus {
   padding-top: 300px;
